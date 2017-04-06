@@ -1,0 +1,12 @@
+future: true
+permalink: /:title/
+url: http://genzzhang.github.io
+name: Genz ZHANG
+author: genzzhang
+qq: 
+email: genzzhang@163.com
+github: genzzhang
+paginate: 20
+highlighter: rouge
+truncate: true
+about: "Genz ZHANG"
