@@ -3,7 +3,7 @@ layout: post
 title: leetcode:【深度优先搜索】Combinations
 date: 2015-04-13 23:08
 categories: 算法
-tags: leetcode、dfs
+tags: leetcode
 ---
 
 #问题描述
