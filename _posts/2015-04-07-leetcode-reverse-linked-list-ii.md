@@ -6,7 +6,7 @@ categories: 算法
 tags: leetcode
 ---
 
-#问题描述
+# 问题描述
 
 Reverse a linked list from position m to n. Do it in-place and in one-pass.
 
@@ -19,7 +19,7 @@ Note:
 Given m, n satisfy the following condition:  
 1 ≤ m ≤ n ≤ length of list.
 
-#code
+# code
 
 ```
 /**

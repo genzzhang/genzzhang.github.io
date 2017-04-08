@@ -6,13 +6,13 @@ categories: 算法
 tags: leetcode
 ---
 
-#问题描述
+# 问题描述
 
 Given two numbers represented as strings, return multiplication of the numbers as a string.
 
 Note: The numbers can be arbitrarily large and are non-negative.
 
-#code
+# code
 
 ```
 //              2   3   4  

@@ -6,7 +6,7 @@ categories: 算法
 tags: leetcode dfs
 ---
 
-#问题描述
+# 问题描述
 
 Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
 
@@ -22,7 +22,7 @@ If n = 4 and k = 2, a solution is:
   　[1,4],  
 ]
 
-#code
+# code
 
 ```
 /*

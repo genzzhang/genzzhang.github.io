@@ -6,7 +6,7 @@ categories: 算法
 tags: leetcode
 ---
 
-#问题描述
+# 问题描述
 
 Given an absolute path for a file (Unix-style), simplify it.
 
@@ -22,7 +22,7 @@ Another corner case is the path might contain multiple slashes '/' together, suc
 
 In this case, you should ignore redundant slashes and return "/home/foo".
 
-#code
+# code
 
 ```
 /*
