@@ -1,6 +1,6 @@
 ---
 layout: post
-title: leetcode:有限状态机Valid Number    
+title: leetcode:【有限状态机】Valid Number    
 date: 2015-04-19 18:35
 categories: 算法
 tags: leetcode

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: leetcode:深度优先搜索与Tree  
+title: leetcode:【深度优先搜索】与Tree  
 date: 2015-04-14 11:51
 categories: 算法
 tags: leetcode tree dfs
