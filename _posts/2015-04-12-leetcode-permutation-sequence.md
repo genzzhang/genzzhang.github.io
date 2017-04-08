@@ -6,7 +6,8 @@ categories: 算法
 tags: leetcode
 ---
 
-#问题描述
+#问题描述  
+
 The set [1,2,3,…,n] contains a total of n! unique permutations.
 
 By listing and labeling all of the permutations in order,
@@ -22,7 +23,8 @@ Given n and k, return the k<sup>th</sup> permutation sequence.
 
 Note: Given n will be between 1 and 9 inclusive.
 
-#code
+#code   
+
 ```
 /*
 n个元素的排列总数是n!。

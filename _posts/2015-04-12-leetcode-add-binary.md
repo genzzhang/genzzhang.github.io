@@ -6,7 +6,8 @@ categories: 算法
 tags: leetcode
 ---
 
-#问题描述
+#问题描述 
+
 Given two binary strings, return their sum (also a binary string).
 
 For example,  
@@ -15,6 +16,7 @@ b = "1"
 Return "100"
 
 #code
+
 ```
 /*
 注意

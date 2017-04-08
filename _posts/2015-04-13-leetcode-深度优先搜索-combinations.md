@@ -7,6 +7,7 @@ tags: leetcode dfs
 ---
 
 #问题描述
+
 Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
 
 For example,  
@@ -22,6 +23,7 @@ If n = 4 and k = 2, a solution is:
 ]
 
 #code
+
 ```
 /*
 第一个思路就是dfs

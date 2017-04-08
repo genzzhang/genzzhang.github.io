@@ -7,11 +7,13 @@ tags: leetcode
 ---
 
 #问题描述
+
 Given two numbers represented as strings, return multiplication of the numbers as a string.
 
 Note: The numbers can be arbitrarily large and are non-negative.
 
 #code
+
 ```
 //              2   3   4  
 //            × 5   6   7  
