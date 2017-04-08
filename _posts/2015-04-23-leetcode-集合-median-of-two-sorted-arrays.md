@@ -3,7 +3,7 @@ layout: post
 title: leetcode:【集合】Median of Two Sorted Arrays
 date: 2015-04-24 16:49
 categories: 算法
-tags: leetcode colletion
+tags: leetcode collection
 ---
 
 # 问题描述 Median of Two Sorted Arrays
