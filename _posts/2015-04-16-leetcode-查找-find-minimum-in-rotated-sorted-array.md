@@ -3,7 +3,7 @@ layout: post
 title: leetcode:【查找】Find Minimum in Rotated Sorted Array
 date: 2015-04-16 17:32
 categories: 算法
-tags: leetcode 查找
+tags: leetcode search
 ---
 
 # 问题描述 Find Minimum in Rotated Sorted Array

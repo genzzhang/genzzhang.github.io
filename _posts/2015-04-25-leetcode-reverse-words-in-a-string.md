@@ -3,7 +3,7 @@ layout: post
 title: leetcode:Reverse Words in a String
 date: 2015-04-25 18:38
 categories: 算法
-tags: leetcode 
+tags: leetcode string
 ---
 
 # 问题描述   
