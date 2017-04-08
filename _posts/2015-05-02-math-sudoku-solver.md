@@ -7,7 +7,7 @@ tags: leetcode math
 ---
 
 # 问题描述 
-```
+
 Write a program to solve a Sudoku puzzle by filling the empty cells.
 
 Empty cells are indicated by the character '.'.
@@ -21,7 +21,7 @@ A sudoku puzzle...
 ![](/assets/2015-05-02-math-sudoku-solver图2.png)
 
 ...and its solution numbers marked in red.
-```
+
 
 # code
 
