@@ -3,7 +3,7 @@ layout: post
 title: leetcode:【动态规划】Jump Game II 
 date: 2015-04-12 23:29
 categories: 算法
-tags: leetcode
+tags: leetcod dp
 ---
 
 #问题描述
