@@ -1,9 +1,9 @@
 ---
 layout: post
-title: leetcode:Set Matrix Zeroes
+title: leetcode:【集合】Set Matrix Zeroes
 date: 2015-04-16 13:41
 categories: 算法
-tags: leetcode
+tags: leetcode collection
 ---
 
 # 问题描述
