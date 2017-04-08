@@ -1,12 +1,12 @@
 ---
 layout: post
-title: leetcode:【宽度优先搜索】Binary Tree Level Order Traversal I && II
+title: leetcode:【宽度优先搜索】Binary Tree Level Order Traversal
 date: 2015-04-26 22:21
 categories: 算法
 tags: leetcode tree bfs
 ---
 
-# 问题描述   Binary Tree Level Order Traversal  
+# 问题描述   Binary Tree Level Order Traversal I 
 ```
 Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
 
@@ -23,7 +23,7 @@ return its level order traversal as:
   [9,20],
   [15,7]
 ]
-``
+```
 
 # code
 
