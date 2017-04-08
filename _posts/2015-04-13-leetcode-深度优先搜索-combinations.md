@@ -75,4 +75,35 @@ public class Solution {
     	}
     };
 }
+
+/*
+对于这种固定长度解法
+step=0,有何种选择，选择的范围：起点终点，下一步的选择范围是什么
+直到step=k-1,共进行了k步，
+当step=k,也就是超出固定长度则处理return
+Submission Result: Accepted
+*/	
+public class Solution {
+    public List<ArrayList<Integer>> combine(int n, int k) {
+    	List<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
+    	if(k<=0 || n<1) return null;
+    	getListItem(1,n,0,list,new int[k]);
+    	return list;
+    }
+    
+    private void getListItem(int start, int end, int step, List<ArrayList<Integer>> list, int[] path) {
+    	if(step==path.length) {
+    		ArrayList<Integer> listItem = new ArrayList<Integer>();
+    		for(int i = 0;i<step;i++)
+    			listItem.add(path[i]);
+    		list.add(listItem);
+    		return;
+    	} else {
+    		for(int i = start; i<= end;i++) {
+    			path[step] = i;
+    			getListItem(i+1, end, step+1, list, path);
+    		}
+    	}
+    };
+}
 ```
