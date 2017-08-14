@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Android Canvas drawText实现文字垂直居中及其背景绘制
+title: Android Canvas drawText 实现文字垂直居中及其背景绘制
 date: 2017-08-14 16:52
 categories: Android
-tags: RichText
+tags: rich-text
 ---
 
-##  需求  
+##  1、需求  
 标题+标签组合显示。标签字体放在标题后面，标签四周加框并呈1dp圆角。  
-![](/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制1.png)
+![](/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制1.png)  
 
-##  方案  
+<br />
+##  2、方案  
 使用TextView承载，结合SpannableString实现图文并排，具体选取ImageSpan实现标签样式。
 ###  绘制文字 
 在西文中，有基线（baseline）、升部（ascent）、降部（descent）的概念。  
@@ -48,7 +49,7 @@ public static class FontMetrics {
 }
 ```
 通常来说中文就没有这样的概念，不过在绘制的时候，和英文字符的绘制并无两样，也是有类似基线、升部、降部的区分。  
-![](/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制3.png) 
+<img src="/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制3.png" align=left>
 ```
 canvas.drawText("基", x, y, mPaint);
 float size = mPaint.measureText("基");
@@ -98,8 +99,9 @@ transY = bottom - b.getBounds().bottom
 一句话就是，自动与view的bottom值对齐。  
 修改x和bottom数据，就可以随意把背景图绘制到那个位置
 
-##  实现
-![](/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制4.png)  
+<br />
+##  3、实现
+<img src="/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制4.png" align=left>
 ###  思路 
 绘制文字，基准线y。要居中，也就是中心点保持一致，计算字号修改后基准线的值。  
 y + paint.ascent() + y + paint.descent() = y + paint.ascent() + y + paint.descent()  
