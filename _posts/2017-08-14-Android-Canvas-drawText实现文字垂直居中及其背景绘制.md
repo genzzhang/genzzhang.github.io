@@ -108,9 +108,7 @@ y + paint.ascent() + y + paint.descent() = y + paint.ascent() + y + paint.descen
 绘制背景，背景图下边沿与bottom值对齐。  
 y + paint.decent() + 背景图宽度 + 其他的设置效果 = bottom  
   
-###  代码 
-ImageSpan extends DynamicDrawableSpan  
-源码中，ImageSpan并没有重写draw方法，而是使用父类DynamicDrawableSpan的绘制。  
+###  代码   
 ```
 SpannableString msp = new SpannableString(title + mark);
 msp.setSpan(new ImageSpan(mDescriBg) {
