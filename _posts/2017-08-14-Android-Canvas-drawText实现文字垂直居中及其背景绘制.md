@@ -64,8 +64,8 @@ height = paint.descent() - paint.ascent()
 width = paint. measureText(String)  
 *  文字绘制的起点由x和y决定:  
 y 就是基线（baseline）的坐标  
-y + paint.ascent() 就是问题的降部坐标  
-y + paint.descent() 就是问题的降部坐标
+y + paint.ascent() 就是文字的降部坐标  
+y + paint.descent() 就是文字的降部坐标
 
 ###  绘制背景图 
 ImageSpan extends DynamicDrawableSpan  
