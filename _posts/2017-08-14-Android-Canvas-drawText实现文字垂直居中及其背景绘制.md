@@ -50,7 +50,7 @@ public static class FontMetrics {
 ```
 通常来说中文就没有这样的概念，不过在绘制的时候，和英文字符的绘制并无两样，也是有类似基线、升部、降部的区分。  
 
-<img src="/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制3.png" align=left>
+<img src="../assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制3.png" align=left>
 ```
 canvas.drawText("基", x, y, mPaint);
 float size = mPaint.measureText("基");
@@ -102,7 +102,7 @@ transY = bottom - b.getBounds().bottom
 
 <br />
 ##  3、实现
-<img src="/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制4.png" align=left>
+<img src="../assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制4.png" align=left>
 ###  思路 
 绘制文字，基准线y。要居中，也就是中心点保持一致，计算字号修改后基准线的值。  
 y + paint.ascent() + y + paint.descent() = y + paint.ascent() + y + paint.descent()  
