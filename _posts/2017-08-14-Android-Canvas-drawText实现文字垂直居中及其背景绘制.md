@@ -59,10 +59,10 @@ canvas.drawLine(x, y + mPaint.descent(), x + size, y + mPaint.descent(), mPaint)
 ```
 
 绘制文字有两个关键点
->*  文字的宽高由字号大小决定:   
+>- **文字的宽高**由字号大小决定:   
 height = paint.descent() - paint.ascent()  
 width = paint. measureText(String)  
-*  文字绘制的起点由x和y决定:  
+- **文字绘制的起点**由x和y决定:  
 y 就是基线（baseline）的坐标  
 y + paint.ascent() 就是文字的降部坐标  
 y + paint.descent() 就是文字的降部坐标
@@ -96,7 +96,7 @@ canvas.translate(x, transY)
 注意到：  
 transY = bottom - b.getBounds().bottom  
 这代表什么意思呢？背景图距离view底部多少就整体往下偏移多少，也就是说背景图默认是从view底部开始的，与背景图设置的Rect（left, top, right, bottom）中Y轴上的坐标系没有绝对关系，反正都是会偏移到view底部中来。  
-一句话就是，自动与view的bottom值对齐。  
+一句话就是，**自动与view的bottom值对齐**。  
 修改x和bottom数据，就可以随意把背景图绘制到那个位置
 
 <br />
@@ -105,8 +105,9 @@ transY = bottom - b.getBounds().bottom
 ###  思路 
 绘制文字，基准线y。要居中，也就是中心点保持一致，计算字号修改后基准线的值。  
 y + paint.ascent() + y + paint.descent() = y + paint.ascent() + y + paint.descent()  
+
 绘制背景，背景图下边沿与bottom值对齐。  
-y + paint.decent() + 背景图宽度 + 其他的设置效果 = bottom  
+y + paint.decent() + 背景图边距宽度 + 其他的设置效果 = bottom  
   
 ###  代码   
 ```
