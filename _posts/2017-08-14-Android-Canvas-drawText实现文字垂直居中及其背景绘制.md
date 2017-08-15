@@ -102,7 +102,11 @@ transY = bottom - b.getBounds().bottom
 <br />
 ##  3、实现
 ![](/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制4.png)  
-<p>&lt;img src="/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制4.png" align=right /&gt;</p>
+
+<div align = left>
+![](/assets/2017-08-14-Android-Canvas-drawText实现文字垂直居中及其背景绘制4.png)
+</div>
+
 ###  思路 
 绘制文字，基准线y。要居中，也就是中心点保持一致，计算字号修改后基准线的值。  
 y + paint.ascent() + y + paint.descent() = y + paint.ascent() + y + paint.descent()  
