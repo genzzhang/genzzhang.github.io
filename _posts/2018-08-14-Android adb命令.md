@@ -87,7 +87,8 @@ exit
 
 ## 3、文件操作   
 一些常用文件操作adb命令：
->* **截图**
+
+* **截图**
 ```  
 rem 截图
 @echo off
@@ -97,15 +98,15 @@ adb wait-for-device
 set picTitle=%date:~0,4%%date:~5,2%%date:~8,2%_%time:~0,2%%time:~3,2%%time:~6,2%_%time:~9,2%
 adb shell screencap -p | sed 's/\r$//' > %picTitle%.png
 ```  
->* sd卡导入到电脑当前文件夹
+* sd卡导入到电脑当前文件夹
 ``` 
 adb pull /sdcard/log.txt .
 ``` 
->* 电脑文件导入到sd卡目录
+* 电脑文件导入到sd卡目录
 ``` 
 adb push log.txt /sdcard/
 ``` 
->* 电脑文件导入到sd卡目录
+* 电脑文件导入到sd卡目录
 ``` 
 adb push log.txt /sdcard/
 ``` 
