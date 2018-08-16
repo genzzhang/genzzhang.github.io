@@ -16,7 +16,7 @@ adb命令运行的文件在android-sdk\platform-tools中，如下：
 ## 1、使用指令备忘   
 一些常用的调试优化命令：
 
-* **打印log到当前目录文件**
+* **.bat打印log到当前目录文件**
 ```
 cd  %~dp0
 @echo off
@@ -44,7 +44,8 @@ adb shell dumpsys meminfo com.tentcent.qqpimsecure
 ``` 
 * **打开手管首页**
 ```  
-adb shell am start -n "com.tencent.qqpimsecure/com.tencent.server.fore.QuickLoadActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+adb shell am start -n "com.tencent.qqpimsecure/com.tencent.server.fore.QuickLoadActivity" 
+-a android.intent.action.MAIN -c android.intent.category.LAUNCHER
 ``` 
 * **ANR，/data/anr/traces.txt,一般直接进入anr目录不需要权限**
 ```  
