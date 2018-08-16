@@ -42,14 +42,14 @@ adb shell dumpsys activity top
 ```  
 adb shell dumpsys meminfo com.tentcent.qqpimsecure
 ``` 
-* **startActivity/Broadcast**   
+* **startActivity/Broadcast**
 ```  
 adb shell am start -n "com.tencent.qqpimsecure/com.tencent.server.fore.QuickLoadActivity" 
 -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
 
 adb shell am broadcast -a xxx
 ```   
-* **ANR**，/data/anr/traces.txt,一般直接进入anr目录不需要权限   
+* **ANR**，/data/anr/traces.txt,一般直接进入anr目录不需要权限
 ```  
 adb shell
 su
