@@ -63,14 +63,12 @@ adb pull /sdcard/traces.txt .
 1）adb shell dumpsys SurfaceFlinger 
 SurfaceFlinger服务是Android的系统服务，负责管理Android系统的显示帧缓冲信息。
 Android应用程序通过调用SurfaceFlinger服务将Surface渲染到显示屏。 
-命令获取最近127帧的数据。  
-&nbsp 			
+命令获取最近127帧的数据。  	
 2）adb shell dumpsys gfxinfo    
 gfxinfo，GPU呈现模式分析，Android 4.1引入的一个新功能。
 在开发者选项中开启强制进行GPU渲染，获取最新128帧的绘制信息。
 详细包括每一帧绘制的Draw，Process，Execute三个过程的耗时，
-如果这三个时间总和超过16.6ms即认为是发生了卡顿。  
-&nbsp
+如果这三个时间总和超过16.6ms即认为是发生了卡顿。 
 3）利用UI线程的Looper打印的日志    
 Looper.loop()中，dispatchMessage前后会打印日志
 Looper.getMainLooper().setMessageLogging(new Printer())
@@ -81,7 +79,6 @@ Looper.getMainLooper().setMessageLogging(new Printer())
 	    sb.append(s.toString() + "\n");
 	}
 	Log.e("TAG", sb.toString());
-&nbsp
 4）利用Choreographer.FrameCallback监控卡顿  
 Choreographer.getInstance().postFrameCallback(new Choreographer.FrameCallback())
 Android系统每隔16ms发出VSYNC信号，来通知界面进行重绘、渲染，
