@@ -3,7 +3,7 @@ layout: post
 title: Android Adb命令
 date: 2018-08-14 21:30
 categories: Android
-tags: 工具
+tags: 技巧
 ---
 
 window中，在当前目录，**shift+右击**，选择在此处打开命令窗口，直接调出cmd。
@@ -42,13 +42,12 @@ adb shell dumpsys activity top
 ```  
 adb shell dumpsys meminfo com.tentcent.qqpimsecure
 ``` 
-* **startActivity/Broadcast**
+* **startActivity/Broadcast**  
 ```  
 adb shell am start -n "com.tencent.qqpimsecure/com.tencent.server.fore.QuickLoadActivity" 
--a android.intent.action.MAIN -c android.intent.category.LAUNCHER
-
+-a android.intent.action.MAIN -c android.intent.category.LAUNCHER  
 adb shell am broadcast -a xxx
-```   
+```  
 * **ANR**，/data/anr/traces.txt,一般直接进入anr目录不需要权限
 ```  
 adb shell
